@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/img"
+public_folder: "/img"
+collections: 
+ - name: "inv"
+   label: "inv"
+   folder: "src/inv"
+   create: true
+   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+   fields: 
+    - { label: "Title", name: "title", widget: "string" }
+    - { label: "Description", name: "description", widget: "string" }
+    - { label: "Author", name: "author", widget: "string" }
+    - { label: "Date", name: "date", widget: "datetime" }
+    - { label: "Tags", name: "tags", widget: "select", multiple: true, min: 1, max: 5, options: ["post", "kanjo", "sportscar", "touring"], default: ["post"] }
+    - { label: "Featured Image", name: "image", widget: "image" }
+    - { label: "Image Caption", name: "imageAlt", widget: "string" }
+    - { label: "Body", name: "body", widget: "markdown" }

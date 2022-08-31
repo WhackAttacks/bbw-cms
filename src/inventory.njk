@@ -1,0 +1,14 @@
+---
+title: Inventory | BBW
+layout: 'base.njk'
+---
+
+<body>
+
+
+  <section class="main-inv container">
+      {%- for post in collections.post | reverse -%}
+        {% include 'article-snippet.njk' %}
+      {%- endfor -%}
+  </section>
+
