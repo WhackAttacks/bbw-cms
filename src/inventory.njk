@@ -5,7 +5,7 @@ layout: 'base.njk'
 
 <div class="main-inv container">
   <h2 class="inv-header">Vehicles for Sale</h2>
-    <ul class="sedans coupes">
+    <ul class="sedans coupes inv-grid">
       {%- for post in collections.post | reverse -%}
         {% include 'article-snippet.njk' %}
       {%- endfor -%}
