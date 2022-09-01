@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | BWW</title>
-  <script src="https://kit.fontawesome.com/b581a316e8.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <title> Home|BBW</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <header>
+    <header>
     <div class="navbar">
       <div class="logo-main">
          <a href="index.html">
@@ -18,15 +18,15 @@
         </div>
       <nav class="nav-list">
         <ul class="nav-container">
-          <li class="column-nav"><a href="index.html">Home</a></li>
-          <li class="column-nav"><a href="inventory.html">Vehicles for Sale</a></li>
-          <li class="column-nav"><a href="about.html">About</a></li>
-          <li class="column-nav current"><a href="contact.html">Contact</a></li>
+          <li class="column-nav"><a href="/index.html">Home</a></li>
+          <li class="column-nav"><a href="/inventory/">Vehicles for Sale</a></li>
+          <li class="column-nav"><a href="/about/">About</a></li>
+          <li class="column-nav"><a href="/contact/">Contact</a></li>
         </ul>
       </div>
     </nav>
   </header>
-
+  
   <section class="contact-main">
     
     
@@ -72,9 +72,22 @@
       </div>
     </div>
   </section>
-
+  
   <footer class="main-footer dark-bg">
     <p>Big Bad Wolf dealership &copy; 2022, all rights reserved.</p>
   </footer>
+
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
 </body>
 </html>

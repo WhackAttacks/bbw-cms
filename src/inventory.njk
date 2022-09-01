@@ -3,12 +3,12 @@ title: Inventory | BBW
 layout: 'base.njk'
 ---
 
-<body>
+<div class="all-a-sec">
+  <h2 class="all-header">Recent Articles</h2>
+    <ul class="all-a-list">
 
-
-  <section class="main-inv container">
       {%- for post in collections.post | reverse -%}
         {% include 'article-snippet.njk' %}
       {%- endfor -%}
-  </section>
-
+    </ul>
+</div>
