@@ -362,9 +362,11 @@ form button {
 
 .inv-grid {
   display: grid;
-  grid-template-columns: 1em 1em;
-  justify-content: space-between;
-  width: 50%;
+  grid-template-areas: 
+  'item item'
+  'item item';
+  justify-content: center
+  
 }
 
 .inv-details {
@@ -404,4 +406,30 @@ form button {
 .main-inv .inv-header {
   grid-area: header;
   font-size: 4rem;
+}
+
+@media screen and (max-width: 912px ) {
+  .inv-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+  }
+  .inv-item {
+    width: auto;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .nav-list .nav-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+  }
+  .main-inv{
+    width: fit-content;
+  }
 }
