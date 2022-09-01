@@ -352,27 +352,26 @@ form button {
 /* inv */
 
 .main-inv {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
+  display: grid;
+  grid-template-areas: 
+  'header header header header'
+  'item item item item';
   text-align: center;
-  width: 100%;
-  justify-content: space-evenly;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),url(img/fancyrim.jpg) no-repeat center center/cover;
   color: #fff;
+  height: calc(100vh - 50px);
 }
 
 .inv-details {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   padding: 5px;
-  width: 100%;
+  width: 75%;
+  text-align: center;
+  align-self: center;
   background: rgba(0, 0, 0, 0.9);
 }
 
 .inv-title {
+  margin: 0;
   padding: 5px;
   font-size: 26px;
 }
@@ -384,15 +383,21 @@ form button {
 }
 
 .sedans, .coupes {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
   justify-content: space-evenly;
+  list-style: none;
 }
 
 .inv-item {
+  grid-area: item;
   width: 800px;
-  padding: 2px;
-  margin: 2px;
+  margin-top: -22em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.main-inv .inv-header {
+  grid-area: header;
+  font-size: 4rem;
+}

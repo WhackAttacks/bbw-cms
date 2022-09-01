@@ -1,11 +1,9 @@
-9 lines (9 sloc)  499 Bytes
 
 <li>
-  <article class="snippet">
-    <img class="snippet__image" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
-    <h3 class="snippet-title"> <a href="{{ post.url }}"> {{ post.data.title }} </a></h3>
-    <p class="snippet-meta">by <span>{{post.data.author}}</span> on <span>{{ post.data.date | postDate }}</span></p>
-    <p class="snippet-body">{{post.data.description}}</p>
-   <button  class="btn btn-primary"><a href="{{ post.url }}">Continue Reading</a> </button>
+  <article class="inv-item">
+    <img class="inv-img" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
+    <h3 class="inv-title"> {{ post.data.title }}</h3>
+    <p class="inv-details">{{post.data.description}}</p>
+   
   </article>
 </li>

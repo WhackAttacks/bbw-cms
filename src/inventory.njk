@@ -3,10 +3,9 @@ title: Inventory | BBW
 layout: 'base.njk'
 ---
 
-<div class="all-a-sec">
-  <h2 class="all-header">Recent Articles</h2>
-    <ul class="all-a-list">
-
+<div class="main-inv container">
+  <h2 class="inv-header">Vehicles for Sale</h2>
+    <ul class="sedans coupes">
       {%- for post in collections.post | reverse -%}
         {% include 'article-snippet.njk' %}
       {%- endfor -%}
