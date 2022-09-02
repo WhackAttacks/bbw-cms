@@ -11,6 +11,7 @@ layout: 'base.njk'
       {%- for post in collections.About2 -%}
         <p class="second-p-about"> {{ post.data.description }} </p>
       {%- endfor -%}
+    </div>
     <div class="about-column">
     <img class="about-carimg" src="/img/luxurycar.jpg" alt="DangProblem">
     </div>
@@ -21,7 +22,7 @@ layout: 'base.njk'
       <h1 class="prime">What Our Clients Say</h1>
       <div class="test-column">
         <img class="t1" src="/img/person-1.jpg" alt="">
-        {%- for post in collections.Testimonial1 -%}
+        {%- for post in collections.Testimonial2 -%}
         <p> {{ post.data.description }} </p>
         {%- endfor -%}
       </div>
