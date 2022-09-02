@@ -7,8 +7,8 @@ layout: 'base.njk'
     <h1 class="welcome-header">Big Bad</h1>
     <img class="welcome-header-img" src="./img/logo2.png" alt=""> 
     
-      {%- for post in collections.Home-Slogan | reverse -%}
-        {% include 'slogan.njk' %}
+      {%- for post in collections.HomeSlogan | reverse -%}
+        <p>{{ post.data.description }}</p>
       {%- endfor -%}
     
     <button class="btn btn-welcome"> <a href="/About"> About our dealership</a> </button>
@@ -18,7 +18,9 @@ layout: 'base.njk'
     <img src="img/hotrodmotor.jpg" alt="DangProblem">
     <div class="showcase-text">
       <h2><span class="prime">Who</span> are we</h3>
-      <p> tldr about and goals things of that nature idk I ain't no writer my mans figure it out. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, debitis inventore! Dignissimos, maxime eius nam a veritatis repudiandae amet voluptate natus illo dolorum sunt ratione. Asperiores sapiente veritatis beatae eos.</p>
+      {%- for post in collections.HomeWho | reverse -%}
+        <p>{{ post.data.description }}</p>
+      {%- endfor -%}
       <button class="btn btn-light"><a href="/About"> Read More</a></button>
     </div>
   </section>

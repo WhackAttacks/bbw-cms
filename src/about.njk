@@ -5,9 +5,12 @@ layout: 'base.njk'
 
   <section class="main-about">
     <div class="about-column"><h1><span class="prime">About</span>  our dealership</h1>
-    <p class="first-p-about"> Lorem ipsum dolor sit amet consectetur adipisicing elit. In earum minus illum quas nemo, fugit aperiam provident ipsa voluptatibus repudiandae harum ipsum quidem reprehenderit delectus ipsam fuga ratione blanditiis obcaecati reiciendis sequi. Nulla facilis tempora quidem, ab rem fugiat tempore suscipit esse provident voluptatibus voluptatem ut reiciendis alias laborum cum.</p>
-    <p class="second-p-about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem eaque ducimus totam pariatur quas neque obcaecati consequatur blanditiis fuga minus aut nemo et cumque eveniet ipsam doloribus aspernatur, odio vero!</p>
-    </div>
+      {%- for post in collections.About1 -%}
+        <p class="first-p-about"> {{ post.data.description }} </p>
+      {%- endfor -%}
+      {%- for post in collections.About2 -%}
+        <p class="second-p-about"> {{ post.data.description }} </p>
+      {%- endfor -%}
     <div class="about-column">
     <img class="about-carimg" src="/img/luxurycar.jpg" alt="DangProblem">
     </div>
@@ -18,11 +21,15 @@ layout: 'base.njk'
       <h1 class="prime">What Our Clients Say</h1>
       <div class="test-column">
         <img class="t1" src="/img/person-1.jpg" alt="">
-        <p class="t2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestiae eos, sapiente fugit mollitia quis ad maiores aperiam commodi pariatur!</p>
+        {%- for post in collections.Testimonial1 -%}
+        <p> {{ post.data.description }} </p>
+        {%- endfor -%}
       </div>
       <div class="test-column">
         <img src="/img/person-2.jpg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati reprehenderit saepe laboriosam nihil omnis! Delectus nisi rerum blanditiis sed expedita.</p>
+        {%- for post in collections.Testimonial2 -%}
+        <p> {{ post.data.description }} </p>
+        {%- endfor -%}
       </div>
     </div>
   </section>
