@@ -14,7 +14,7 @@ collections:
     - { label: "Description", name: "description", widget: "string" }
     - { label: "Author", name: "author", widget: "string" }
     - { label: "Date", name: "date", widget: "datetime" }
-    - { label: "Tags", name: "tags", widget: "select", multiple: true, min: 1, max: 5, options: ["post", "Commercial", "Compacts", "Coupes", "Industrial", "Motorcycles", "offroad", "Sedan", "Sports", "SUV", "Van", "Utility", "HomeSlogan", "HomeWho", "About1","About2" "Testimonial1", "Testimonial2"], default: ["post"] }
+    - { label: "Tags", name: "tags", widget: "select", multiple: true, min: 1, max: 5, options: ["post", "Commercial", "Compacts", "Coupes", "Industrial", "Motorcycles", "offroad", "Sedan", "Sports", "SUV", "Van", "Utility", "HomeSlogan", "HomeWho", "About1", "About2", "Testimonial1", "Testimonial2"], default: ["post"] }
     - { label: "Featured Image", name: "image", widget: "image" }
     # - { label: "Image Caption", name: "imageAlt", widget: "string" }
     # - { label: "Body", name: "body", widget: "markdown" }
