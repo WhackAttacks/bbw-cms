@@ -14,19 +14,8 @@ collections:
     - { label: "Description", name: "description", widget: "string" }
     - { label: "Author", name: "author", widget: "string" }
     - { label: "Date", name: "date", widget: "datetime" }
-    - { label: "Tags", name: "tags", widget: "select", multiple: true, min: 1, max: 5, options: ["post"], default: ["post"] }
+    - { label: "Tags", name: "tags", widget: "select", multiple: true, min: 1, max: 5, options: ["post", "kanjo", "sportscar", "touring"], default: ["post"] }
     - { label: "Featured Image", name: "image", widget: "image" }
-    - { label: "Image Caption", name: "imageAlt", widget: "string" }
-    - { label: "Body", name: "body", widget: "markdown" }
-
-  - name: "info"
-    label: "info"
-    folder: "src/info"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields: 
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: "Author", name: "author", widget: "string" }
-    - { label: "Date", name: "date", widget: "datetime" }
-    - { label: "Tags", name: "tags", widget: "select", multiple: true, min: 1, max: 5, options: ["post", "home-slogan", "home-who", "about", "testimonial1", "testimonial2"] }
-    - { label: "Body", name: "body", widget: "markdown" }
+    # - { label: "Image Caption", name: "imageAlt", widget: "string" }
+    # - { label: "Body", name: "body", widget: "markdown" }
+    
