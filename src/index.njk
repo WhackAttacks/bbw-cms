@@ -6,11 +6,11 @@ layout: 'base.njk'
   <section class="welcome-index darken">
     <h1 class="welcome-header">Big Bad</h1>
     <img class="welcome-header-img" src="./img/logo2.png" alt=""> 
-    <p>
+    
       {%- for post in collections.Home-Slogan | reverse -%}
         {% include 'slogan.njk' %}
       {%- endfor -%}
-    </p>
+    
     <button class="btn btn-welcome"> <a href="/About"> About our dealership</a> </button>
   </section>
 
