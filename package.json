@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WhackAttacks/bbw-cms.git"
+    "url": "git+https://github.com/HJimmyB/bigbad-cms.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/WhackAttacks/bbw-cms/issues"
+    "url": "https://github.com/HJimmyB/bigbad-cms/issues"
   },
-  "homepage": "https://github.com/WhackAttacks/bbw-cms#readme",
+  "homepage": "https://github.com/HJimmyB/bigbad-cms#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
   }
