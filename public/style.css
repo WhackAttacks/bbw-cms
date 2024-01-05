@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+  font-family: "Booter - Zero Zero";
+  src: url("fonts/Booter\ -\ Zero\ Zero.woff") format("wff"),
+      url("Fonts/Booter\ -\ Zero\ Zero.woff2") format("woff2");
+  font-weight: normal;    
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.prime{
+  color: rgb(199, 2, 2);
+}
+
+.bg-prime {
+  background: rgb(199, 2, 2);
+}
+
+.dark-bg {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn {
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-welcome a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-light a {
+  color: #333;
+  text-decoration: none;
+}
+
+.btn-light {
+  border: none;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.btn:hover, .btn-light:hover {
+  background-color: red;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: fit-content;
+  background-color: #333;
+}
+
+.nav-list a {
+  color: #fff;
+}
+/* img-logo */
+.logo-main {
+  box-sizing: border-box;
+  display: flex;
+  font-size: 24px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.logo-main h1 {
+  margin-left: 10px;
+}
+/* Img top */
+.main-logo-img {
+  height: 80px;
+  border-radius: 50%;;
+  margin-left: 10px;
+}
+/* Navbar */
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+  list-style: none;
+  overflow: auto;
+  padding-right: 50px;
+  
+}
+
+.nav-list .nav-container a {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  padding-bottom: 33px;
+  padding-left: 150px;
+  padding-right: 150px;
+  text-decoration: none;
+  margin-top: 6px;
+}
+
+
+nav ul li:hover {
+  color: rgb(rgb(161, 6, 6), green, blue);
+  background-color: red;
+  
+}
+
+.current {
+  background-color: rgb(161, 6, 6);
+}
+
+/* Footer */
+.main-footer {
+  position: relative;
+  bottom: 0;
+  overflow: auto;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+/* Welcome */
+.welcome-index {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/hotrod2.jpg) no-repeat center center/cover;
+}
+
+.welcome-header-img {
+  height: 200px;
+}
+
+.welcome-header {
+  font-family: 'Booter - Zero Zero';
+  font-size: 80px;
+  color: red;
+  margin-top: 2.5rem;
+}
+
+.welcome-index p {
+  color: #fff;
+  font-size: 20px;
+  width: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Showcase */
+.showcase {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+}
+
+.showcase-text {
+  text-align: center;
+  padding-bottom: 300px;
+  color: #fff;
+  padding: 30px 50px;
+}
+
+.showcase-text h2 {
+  font-size: 30px;
+}
+
+.showcase-text p {
+  justify-self: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.showcase-text button {
+  margin-top: 15px;
+}
+
+/* Feats */
+.feats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.feats .box {
+  flex: 33%;
+  padding: 30px;
+}
+
+.feats h3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* About Page */
+.main-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+}
+
+.about-carimg {
+  border-radius: 50%;
+  height: 200px;
+}
+
+.main-about h1 {
+  font-family: 'Booter - Zero Zero';
+  font-weight: bold;
+  font-size: 4em;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.main-about .first-p-about {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.second-p-about {
+  margin-bottom: 50px;
+  font-size: 1.5em;
+}
+
+/* Testimonials */
+.tests-container {
+  background: blue;
+  height: 500px;
+  background: url('img/muscle.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.test-column img {
+  border-radius: 50%;
+  height: 80px;
+}
+
+.test-column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100px;
+  background: rgba(199, 2, 2, 0.7);
+  text-align: center;
+}
+
+.tests-container h1 {
+  text-align: center;
+  font-size: 60px;
+  -webkit-text-stroke: 2px rgb(51, 51, 51);
+}
+
+
+.t2 {
+  padding-right: 100px;
+}
+
+/* Contact */
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  
+}
+
+form {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-top: 5px;
+}
+
+#name, #email {
+  display: flex;
+  width: 50%;
+  font-size: 18px;
+  width: 500px;
+  justify-self: flex-start;
+}
+
+form button {
+  display: flex;
+  align-self: center;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+#message {
+  font-size: 18px;
+  width: 500px;
+  height: 100px;
+}
+
+
+/* Feats Contact */
+.contact-feats {
+  display: flex;
+  flex-direction: row;
+  margin-top: 253px;
+  justify-content: space-evenly;
+  background: #333;
+  width: 100%;
+  height: 100%;
+  padding: 80px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+
+/* inv */
+
+.main-inv{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),url(img/fancyrim.jpg) no-repeat center center/cover;
+  color: #fff;
+  width: 100%;
+}
+
+.inv-grid {
+  display: grid;
+  grid-template-areas: 
+  'item item'
+  'item item';
+  justify-content: center
+  
+}
+
+.inv-details {
+  padding: 5px;
+  width: 75%;
+  text-align: center;
+  align-self: center;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.inv-title {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: 0;
+  padding: 5px;
+  font-size: 26px;
+}
+
+.inv-img {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.sedans, .coupes {
+  list-style: none;
+}
+
+.inv-item {
+  width: 800px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-inv .inv-header {
+  grid-area: header;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 912px ) {
+  .inv-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+  }
+  .inv-item {
+    width: auto;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .nav-list .nav-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+  }
+  .main-inv{
+    width: fit-content;
+  }
+}
